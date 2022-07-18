@@ -6,7 +6,7 @@ Simple REST API capable of requesting words from SJP (Polish dictionary)
 pip install -r requirements.txt
 ```
 ## Access API
-API returns single object containing two keys, word(String) and acceptable(Boolean). 
+The API returns a single object containing two keys, word (String) and acceptable (Boolean).
 ## Example
 ```
 http://127.0.0.1:5000/api/word/tren

@@ -17,4 +17,4 @@ def get_word(word):  # put application's code here
 
 
 if __name__ == '__main__':
-    app.run(port=443)
+    app.run()
