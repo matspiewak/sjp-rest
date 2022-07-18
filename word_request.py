@@ -11,7 +11,7 @@ def is_acceptable(value):
 def request_word(word):
     word_raw_data = requests.get(f'https://sjp.pl/{word}')
     word_html = BeautifulSoup(word_raw_data.text, 'html.parser')
-    found_word = word_html.find('h1').text
+    found_word = word_html.find('h1').text.split()[0]
     word_status = word_html.findAll('p')[0].text
     word_data = {
         'word': found_word,
