@@ -1,1 +1,1 @@
-web: gunicorn sjp-rest.wsgi
+web: gunicorn --bind 0.0.0.0:$PORT sjp-rest.wsgi
