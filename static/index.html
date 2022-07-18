@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+    *,*::before,*::after {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .content {
+        margin-top: 2%;
+        width: 100%;
+        max-width: 600px;
+    }
+    code {
+        display: block;
+        margin: 2em 0 2em 0;
+        padding: 10px;
+        background: hsl(0,0%,97%);
+        outline: hsl(0,0%,90%) 1px solid;
+    }
+    hr {
+        margin: 0.2em 0 1em 0;
+    }
+    p {
+        margin-bottom: 1em;
+    }
+
+    h1,h2 {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="content">
+    <h1>sjp-rest</h1>
+    <hr>
+    <p>Simple REST API capable of requesting words from SJP (Polish dictionary)</p>
+    <h2>Setup</h2>
+    <hr>
+    <code>
+        pip install -r requirements.txt
+    </code>
+    <h2>Access API</h2>
+    <hr>
+    <p>The API returns a single object containing two keys, word (String) and acceptable (Boolean).</p>
+    <h2>Example</h2>
+    <hr>
+    <code>
+        http://127.0.0.1:5000/api/word/tren
+    </code>
+    <code>
+        <pre>
+{
+    "acceptable": true,
+    "word": "tren"
+}
+            </pre>
+    </code>
+</div>
+</body>
+</html>

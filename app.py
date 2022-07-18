@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello world!'
+    return app.send_static_file('index.html')
 
 
 @app.route('/api/word/<word>')
